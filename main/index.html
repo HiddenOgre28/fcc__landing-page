@@ -1,0 +1,81 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FCC Landing Page</title>
+    <link rel="stylesheet" href="C:\Users\christopher\Desktop\landing__page\scss\styles.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="nav-bar">
+            <dl>
+              <dt class="nav-link"><a href="#our-product">Our Product</a></dt>
+              <dt class="nav-link"><a href="#pricing">Pricing</a></dt>
+              <dt class="nav-link"><a href="#contact">Contact</a></dt>
+            </dl>
+        </nav>
+
+        <h1>Page Title</h1>
+        <img id="header-img" src="#" alt="">  <!--- Maybe display as block later, or make it have its own div tag -->
+
+        <section id="our-product">
+            <video id="video" width="100%" height="auto" controls>
+              <source src="movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+            </video>
+          </section>
+      </header>
+
+      <section id="pricing">
+        <div>
+            <h6>Single Box</h6>
+            <img src="#" alt="A single cardboard box.">
+            <ul>
+                <li>Feature A</li>
+                <li>Feature B</li>
+                <li>Feature C</li>
+            </ul>
+            <button type="button">Buy for $25!</button>
+        </div>
+        <div>
+            <h6>Hundred-box pack</h6>
+            <img src="#" alt="Multiple cardboard boxes.">
+            <ul>
+                <li>Feature A</li>
+                <li>Feature B</li>
+                <li>Feature C</li>
+            </ul>
+            <button type="button">Buy for $999!</button>
+        </div>
+        <div>
+            <h6>Unlimited boxes!</h6>
+            <img src="#" alt="All the cardboard boxes!">
+            <ul>
+                <li>Feature A</li>
+                <li>Feature B</li>
+                <li>Feature C</li>
+            </ul>
+            <button type="button">Buy for $1B!</button>
+            <p></p>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+          <label class="email" for="email">
+            <p>Subscribe for weekly box news!</p>
+            <input type="email" id="email" name="email" placeholder="example@mail.com">
+          </label>
+          <label class="submit" for="submit">
+            <input type="submit" id="submit" name="submit">
+          </label>
+        </form>
+    </section>
+
+    <footer>
+        Designed and coded by <a href="#">Yasmin Ledesma</a>.
+    </footer>
+</body>
+</html>
