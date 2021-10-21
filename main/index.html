@@ -3,79 +3,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FCC Landing Page</title>
-    <link rel="stylesheet" href="C:\Users\christopher\Desktop\landing__page\scss\styles.css">
+    <title>FCC Product Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="..\styles\styles.css">
 </head>
 <body>
-    <header id="header">
-        <nav id="nav-bar">
-            <dl>
-              <dt class="nav-link"><a href="#our-product">Our Product</a></dt>
-              <dt class="nav-link"><a href="#pricing">Pricing</a></dt>
-              <dt class="nav-link"><a href="#contact">Contact</a></dt>
+    <header id="header" class="header">
+        <nav id="nav-bar" class="header__nav">
+            <dl class="header__nav__menu">
+              <dt class="nav-link header__nav__menu__link"><a href="#our-product">Product</a></dt>
+              <dt class="nav-link header__nav__menu__link"><a href="#pricing">Pricing</a></dt>
+              <dt class="nav-link header__nav__menu__link nav__1"><a href="#contact">Contact</a></dt>
             </dl>
         </nav>
 
-        <h1>Page Title</h1>
-        <img id="header-img" src="#" alt="">  <!--- Maybe display as block later, or make it have its own div tag -->
+        <div class="header__imgContainer">
+          <h1 class="header__imgContainer__title">Premium Boxes</h1>
+          <img class="header__imgContainer__img" id="header-img" src="..\sources\header.png" alt="">  <!--- Maybe display as block later, or make it have its own div tag -->
+        </div>
 
-        <section id="our-product">
-            <video id="video" width="100%" height="auto" controls>
-              <source src="movie.mp4" type="video/mp4">
+        <section id="our-product" class="header__product">
+            <video class="header__product__video" id="video" width="100%" height="auto" controls>
+              <source src="../sources/video.mp4" type="video/mp4">
               <source src="movie.ogg" type="video/ogg">
               Your browser does not support the video tag.
             </video>
-          </section>
-      </header>
+        </section>
+    </header>
 
-      <section id="pricing">
-        <div>
-            <h6>Single Box</h6>
-            <img src="#" alt="A single cardboard box.">
-            <ul>
-                <li>Feature A</li>
-                <li>Feature B</li>
-                <li>Feature C</li>
-            </ul>
-            <button type="button">Buy for $25!</button>
-        </div>
-        <div>
-            <h6>Hundred-box pack</h6>
-            <img src="#" alt="Multiple cardboard boxes.">
-            <ul>
-                <li>Feature A</li>
-                <li>Feature B</li>
-                <li>Feature C</li>
-            </ul>
-            <button type="button">Buy for $999!</button>
-        </div>
-        <div>
-            <h6>Unlimited boxes!</h6>
-            <img src="#" alt="All the cardboard boxes!">
-            <ul>
-                <li>Feature A</li>
-                <li>Feature B</li>
-                <li>Feature C</li>
-            </ul>
-            <button type="button">Buy for $1B!</button>
-            <p></p>
-        </div>
+    <main class="content">
+      <blockquote class="content__quote">
+          <q class="content__quote__q">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis animi fugiat sequi omnis vel quibusdam error eaque vero at harum.</q>
+      </blockquote>
+        
+      <section id="pricing" class="content__pricing">
+          <div class="content__pricing__offer">
+              <h2 class="content__pricing__offer__title">Single Box</h2>
+              <img class="content__pricing__offer__img" src="../sources/header.png" alt="A single cardboard box.">
+              <dl class="content__pricing__offer__list">
+                  <dt>Feature A</dt>
+                  <dt>Feature B</dt>
+                  <dt>Feature C</dt>
+              </dl>
+              <button class="content__pricing__offer__btn" type="button">Buy for $25!</button>
+          </div>
+          <div class="content__pricing__offer">
+              <h2 class="content__pricing__offer__title">Hundred-box pack</h2>
+              <img class="content__pricing__offer__img" src="../sources/header.png" alt="Multiple cardboard boxes.">
+              <dl class="content__pricing__offer__list">
+                  <dt>Feature A</dt>
+                  <dt>Feature B</dt>
+                  <dt>Feature C</dt>
+              </dl>
+              <button class="content__pricing__offer__btn" type="button">Buy for $999!</button>
+          </div>
+          <div class="content__pricing__offer">
+              <h2 class="content__pricing__offer__title">Unlimited boxes!</h2>
+              <img class="content__pricing__offer__img" src="../sources/header.png" alt="All the cardboard boxes!">
+              <dl class="content__pricing__offer__list">
+                  <dt>Feature A</dt>
+                  <dt>Feature B</dt>
+                  <dt>Feature C</dt>
+              </dl>
+              <button class="content__pricing__offer__btn" type="button">Buy for $1B!</button>
+          </div>
       </section>
+    </main>
       
-      <section id="contact">
-        <form id="form" action="https://www.freecodecamp.com/email-submit" method="get">
-          <label class="email" for="email">
-            <p>Subscribe for weekly box news!</p>
-            <input type="email" id="email" name="email" placeholder="example@mail.com">
-          </label>
-          <label class="submit" for="submit">
-            <input type="submit" id="submit" name="submit">
-          </label>
-        </form>
-    </section>
 
-    <footer>
-        Designed and coded by <a href="#">Yasmin Ledesma</a>.
+    <footer class="footer">
+      <div class="footer__contact">
+        <section id="contact" class="footer__contact__formContainer">
+          <form class="footer__contact__formContainer__form" id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+            <label class="footer__contact__formContainer__form__label" for="email">
+              <h3 class="footer__contact__formContainer__form__label__p">Subscribe for weekly box news!</h3>
+              <input class="footer__contact__formContainer__form__label__input" type="email" id="email" name="email" placeholder="example@mail.com">
+            </label>
+            <label class="submit footer__contact__formContainer__form__label" for="submit">
+              <input class="footer__contact__formContainer__form__label__submit" type="submit" id="submit" name="Submit">
+            </label>
+          </form>
+        </section>
+
+        <dl class="footer__contact__links">
+          <p class="footer__contact__links__label p__1">About Me</p>
+          <dt class="footer__contact__links__element"><a href="#" target="_blank">GitHub</a></dt>
+          <dt class="footer__contact__links__element"><a href="#" target="_blank">Portfolio</a></dt>
+          <dt class="footer__contact__links__element"><a href="#" target="_blank">LinkedIn</a></dt>
+        </dl>
+
+        <dl class="footer__contact__links">
+          <p class="footer__contact__links__label p__2">Get Help</p>
+          <dt class="footer__contact__links__element"><a href="#" target="_blank">How It Works</a></dt>
+          <dt class="footer__contact__links__element"><a href="#" target="_blank">FAQ</a></dt>
+          <dt class="footer__contact__links__element"><a href="#" target="_blank">Help Desk</a></dt>
+        </dl>
+
+        <dl class="footer__contact__links">
+          <p class="footer__contact__links__label p__3">Get In Touch</p>
+          <dt class="footer__contact__links__element"><a href="#" target="_blank">Facebook</a></dt>
+          <dt class="footer__contact__links__element"><a href="#" target="_blank">Twitter</a></dt>
+          <dt class="footer__contact__links__element"><a href="#" target="_blank">Instagram</a></dt>
+        </dl>
+      </div>
+      <p class="footer__credits">2021 @ Designed and coded by <a href="#">Yasmin Ledesma</a>.</p>
     </footer>
-</body>
+  </body>
 </html>

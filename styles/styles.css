@@ -1,0 +1,340 @@
+body {
+  background-color: #fafafa;
+  margin: 0;
+  color: #262626;
+  font-family: "Quicksand", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: #262626;
+}
+
+dl {
+  color: #fafafa;
+}
+
+dt {
+  line-height: 1.2rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+video {
+  max-width: 100%;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  color: #fafafa;
+  margin: 5% auto;
+}
+
+a {
+  color: #2b3b45;
+  font-weight: lighter;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #262626;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #262626;
+}
+
+.header {
+  background-color: #efd09f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content {
+  padding: 5% 10% 10% 10%;
+}
+
+.footer {
+  background-color: #efd09f;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__nav {
+  background-color: #d4aa7d;
+  width: 100%;
+}
+
+.header__nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: bolder;
+}
+
+.header__nav__menu__link {
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-right: 0.1rem solid #efd09f;
+}
+
+.nav__1 {
+  border: none;
+}
+
+.header__imgContainer {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__imgContainer__title {
+  text-transform: uppercase;
+  margin: 2% auto 0 auto;
+}
+
+.header__imgContainer__img {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header__product__video {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+}
+
+.content__quote {
+  width: 80%;
+  margin-bottom: 10%;
+}
+
+.content__quote__q {
+  text-align: justify;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+
+.content__pricing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.content__pricing__offer {
+  border: 0.2rem solid #d4aa7d;
+  width: 90%;
+  height: auto;
+  background-color: #efd09f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content__pricing__offer__title {
+  width: 100%;
+  background-color: #d4aa7d;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.content__pricing__offer__img {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.content__pricing__offer__list {
+  color: #262626;
+  font-size: 1.1rem;
+}
+
+.content__pricing__offer__btn {
+  background: #efd09f;
+  margin: 10%;
+  width: 70%;
+  height: 10vh;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  border: 0.15rem solid #d4aa7d;
+}
+
+.content__pricing__offer__btn:hover {
+  border: 0.2rem solid #fafafa;
+}
+
+.footer__contact__formContainer {
+  border: solid #d4aa7d;
+  margin-top: 5%;
+  width: 85vw;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__contact__formContainer__form__label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.footer__contact__formContainer__form__label__p {
+  display: block;
+  background-color: #d4aa7d;
+  padding: 2% 1%;
+  text-align: center;
+}
+
+.footer__contact__formContainer__form__label__input {
+  width: 90%;
+  height: 1.8rem;
+  border: 2px solid #d4aa7d;
+  border-radius: .1rem;
+  background-color: #fafafa;
+  outline: none;
+}
+
+.footer__contact__formContainer__form__label__input:focus {
+  border: 0.2rem solid #fafafa;
+}
+
+.footer__contact__formContainer__form__label__submit {
+  margin-top: 7%;
+  width: 50%;
+  height: 5vh;
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  border: 0.15rem solid #d4aa7d;
+  outline: none;
+  background-color: #efd09f;
+}
+
+.footer__contact__links__label {
+  text-align: center;
+  margin: .5% auto;
+  position: relative;
+}
+
+.footer__contact__links__element {
+  position: relative;
+  left: 5%;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0% 32%;
+}
+
+.p__2 {
+  right: 1.7%;
+}
+
+.p__3 {
+  left: 3.6%;
+}
+
+.footer__credits {
+  text-align: center;
+  width: 100vw;
+  margin: 1.5%;
+  padding: 2%;
+  border-top: solid #d4aa7d;
+}
+/*# sourceMappingURL=styles.css.map */

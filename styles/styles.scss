@@ -1,0 +1,277 @@
+// Variables //
+// Color palette and fonts //
+$primary-color: hsl(0, 0%, 98%);
+$secondary-color: hsl(37, 72%, 78%); 
+$tertiary-color: hsl(31, 50%, 66%); 
+
+$text-color: hsl(0, 0%, 15%);
+
+$primary-font: 'Quicksand', sans-serif;
+$secondary-font: 'Montserrat', sans-serif;
+
+$link--color: hsl(204, 23, 22%);
+$link--hover: hsl(0, 0%, 15%);
+$link--visited: hsl(0, 0%, 15%); 
+
+// Reusable code //
+@mixin flexContainer($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+// Base //
+body {
+    background-color: $primary-color;
+    margin: 0;
+    color: $text-color;
+	font-family: $primary-font;
+	box-sizing: border-box;
+    
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    color: $text-color;
+}
+
+dl {
+    color: $primary-color;
+}
+
+dt {
+    line-height: 1.2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 1rem;
+    font-family: $secondary-font;
+    color: $primary-color;
+    margin: 5% auto;
+}
+
+a {
+    color: $link--color;
+    font-weight: lighter;
+    text-decoration: none;
+
+    &:hover {
+        color: $link--hover;
+        text-decoration: underline;
+    }
+
+    &:visited {
+        color: $link--visited;
+    }
+}
+
+// Mobile //
+// Layout //
+.header {
+    background-color: $secondary-color;
+    @include flexContainer(column, center, center);
+}
+
+.content {
+    padding: 5% 10% 10% 10%;
+}
+
+.footer {
+    background-color: $secondary-color;
+    font-weight: bold;
+    @include flexContainer(column, center, center)
+}
+
+// Modules //
+// Header Modules//
+.header__nav {
+    background-color: $tertiary-color;
+    width: 100%;
+
+    &__menu {
+        @include flexContainer(row, center, center);
+        font-weight: bolder;
+    
+        &__link {
+            text-align: center;
+            flex: 1;
+            border-right: .1rem solid $secondary-color;
+        }
+    }
+}
+
+.nav__1 {
+    border: none;
+}
+
+.header__imgContainer{
+    margin: 0 auto;
+    @include flexContainer(column, center, center);
+
+    &__title {
+        text-transform: uppercase;
+        margin: 2% auto 0 auto;
+    }
+
+    &__img {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.header__product {
+    &__video {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+    }
+}
+
+// Content Modules //
+.content__quote {
+    width: 80%;
+    margin-bottom: 10%;
+
+    &__q {
+        text-align: justify;
+        font-weight: lighter;
+        font-size: 1.5rem;
+    }
+}
+
+.content__pricing {
+    @include flexContainer(column, center, center);
+    gap: 1rem;
+
+    &__offer {
+        border: .2rem solid $tertiary-color;
+        width: 90%;
+        height: auto;
+        background-color: $secondary-color;
+        @include flexContainer(column, center, center);
+
+        &__title {
+            width: 100%;
+            background-color: $tertiary-color;
+            text-align: center;
+            font-size: 1.3rem;
+        }
+
+        &__img {
+            width: 80%;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        &__list {
+            color: $text-color;
+            font-size: 1.1rem;
+        }
+
+        &__btn {
+            background: $secondary-color;
+            margin: 10%;
+            width: 70%;
+            height: 10vh;
+            font-weight: bold;
+            font-family: $primary-font;
+            font-size: 1.1rem;
+            border: .15rem solid $tertiary-color;
+
+            &:hover {
+                border: .20rem solid $primary-color;
+            }
+        }
+    }
+}
+// Footer Modules //
+.footer__contact__formContainer {
+    border: solid $tertiary-color;
+    margin-top: 5%;
+    width: 85vw;
+    height: auto;
+    @include flexContainer(column, center, center);
+
+    &__form__label {
+        @include flexContainer(column, center, center);
+        width: 100%;
+
+        &__p {
+            display: block;
+            background-color: $tertiary-color;
+            padding: 2% 1%;
+            text-align: center;
+        }
+    
+        &__input {
+            width: 90%;
+            height: 1.8rem;
+            border: 2px solid $tertiary-color;
+            border-radius: .1rem;
+            background-color: $primary-color;
+            outline: none;
+
+            &:focus {
+                border: .2rem solid $primary-color;
+            }
+
+        }
+
+        &__submit {
+            margin-top: 7%;
+            width: 50%;
+            height: 5vh;
+            font-weight: bold;
+            font-family: $primary-font;
+            border: .15rem solid $tertiary-color;
+            outline: none;
+            background-color: $secondary-color;
+            
+        }
+    }
+}
+
+.footer__contact__links {
+
+    &__label {
+        text-align: center;
+        margin: .5% auto;
+        position: relative;
+    }
+
+    &__element {
+        position: relative;
+        left: 5%;
+        text-align: left;
+        margin: 0 auto;
+        padding: 0% 32%;
+    }
+}
+
+.p__2 {
+    right: 1.7%;
+}
+
+.p__3 {
+    left: 3.6%;
+}
+
+.footer__credits {
+    text-align: center;
+    width: 100vw;
+    margin: 1.5%;
+    padding: 2%;
+    border-top: solid $tertiary-color;
+}
