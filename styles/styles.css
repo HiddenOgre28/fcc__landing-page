@@ -332,9 +332,33 @@ a:visited {
 
 .footer__credits {
   text-align: center;
-  width: 100vw;
+  width: 90%;
   margin: 1.5%;
   padding: 2%;
   border-top: solid #d4aa7d;
+}
+
+@media screen and (min-device-width: 375px) {
+  .p__1 {
+    right: 2%;
+  }
+  .p__2 {
+    right: 3%;
+  }
+  .p__3 {
+    left: 1.1%;
+  }
+}
+
+@media screen and (min-device-width: 425px) {
+  .p__1 {
+    right: 3%;
+  }
+  .p__2 {
+    right: 4.2%;
+  }
+  .p__3 {
+    left: -0.5%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -74,7 +74,7 @@ a {
     }
 }
 
-// Mobile //
+// Mobile S - 320px//
 // Layout //
 .header {
     background-color: $secondary-color;
@@ -270,8 +270,41 @@ a {
 
 .footer__credits {
     text-align: center;
-    width: 100vw;
+    width: 90%;
     margin: 1.5%;
     padding: 2%;
     border-top: solid $tertiary-color;
 }
+
+// Mobile M - 375px//
+@media screen and (min-device-width: 375px) {
+    // Footer Modules //
+    .p__1 {
+        right: 2%;
+    }
+    
+    .p__2 {
+        right: 3%;
+    }
+    
+    .p__3 {
+        left: 1.1%;
+    }
+}
+
+// Mobile M - 425px//
+@media screen and (min-device-width: 425px) {
+    .p__1 {
+        right: 3%;
+    }
+    
+    .p__2 {
+        right: 4.2%;
+    }
+
+    .p__3 {
+        left: -0.5%;
+    }
+}
+
+// Mobile M - 768px//
