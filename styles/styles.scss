@@ -9,8 +9,8 @@ $text-color: hsl(0, 0%, 15%);
 $primary-font: 'Quicksand', sans-serif;
 $secondary-font: 'Montserrat', sans-serif;
 
-$link--color: hsl(204, 23, 22%);
-$link--hover: hsl(0, 0%, 15%);
+$link--color: hsl(0, 0%, 15%);
+$link--hover: hsl(204, 23, 22%);
 $link--visited: hsl(0, 0%, 15%); 
 
 // Reusable code //
@@ -79,6 +79,7 @@ a {
 .header {
     background-color: $secondary-color;
     @include flexContainer(column, center, center);
+    font-weight: bold;
 }
 
 .content {
@@ -96,6 +97,8 @@ a {
 .header__nav {
     background-color: $tertiary-color;
     width: 100%;
+    position: sticky;
+    top: 0;
 
     &__menu {
         @include flexContainer(row, center, center);
@@ -155,6 +158,7 @@ a {
     @include flexContainer(column, center, center);
     gap: 1rem;
     transition-duration: 500ms;
+    transition-property: transform;
 
     &__offer {
         border: .2rem solid $tertiary-color;
@@ -192,12 +196,19 @@ a {
             border: .15rem solid $tertiary-color;
 
             &:hover {
-                border: .20rem solid $primary-color;
+                border: .20rem solid $tertiary-color;
+                cursor: pointer;
             }
         }
 
         &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
+            background-color: $primary-color;
+            border: .2rem solid $secondary-color;
+
+            .content__pricing__offer__title {
+                background-color: $secondary-color;
+            }
         }
     }
 }

@@ -36,13 +36,13 @@ figcaption {
 }
 
 a {
-  color: #2b3b45;
+  color: #262626;
   font-weight: lighter;
   text-decoration: none;
 }
 
 a:hover {
-  color: #262626;
+  color: #2b3b45;
   text-decoration: underline;
 }
 
@@ -65,6 +65,7 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: bold;
 }
 
 .content {
@@ -92,6 +93,9 @@ a:visited {
 .header__nav {
   background-color: #d4aa7d;
   width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .header__nav__menu {
@@ -187,6 +191,10 @@ a:visited {
   gap: 1rem;
   -webkit-transition-duration: 500ms;
           transition-duration: 500ms;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .content__pricing__offer {
@@ -239,12 +247,19 @@ a:visited {
 }
 
 .content__pricing__offer__btn:hover {
-  border: 0.2rem solid #fafafa;
+  border: 0.2rem solid #d4aa7d;
+  cursor: pointer;
 }
 
 .content__pricing__offer:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #fafafa;
+  border: 0.2rem solid #efd09f;
+}
+
+.content__pricing__offer:hover .content__pricing__offer__title {
+  background-color: #efd09f;
 }
 
 .footer__contact__formContainer {
