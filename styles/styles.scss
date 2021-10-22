@@ -154,6 +154,7 @@ a {
 .content__pricing {
     @include flexContainer(column, center, center);
     gap: 1rem;
+    transition-duration: 500ms;
 
     &__offer {
         border: .2rem solid $tertiary-color;
@@ -193,6 +194,10 @@ a {
             &:hover {
                 border: .20rem solid $primary-color;
             }
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 }
@@ -307,4 +312,91 @@ a {
     }
 }
 
-// Mobile M - 768px//
+// Tablet / Desktop - 768px and up//
+@media screen and (min-device-width: 768px) {
+    // Layout //
+    .footer__contact {
+        @include flexContainer(row, flex-start, flex-start);
+        gap: 2%;
+    }
+
+    // Modules //
+    // Header Modules //
+    .headerFlex {
+        @include flexContainer(row, center, center);
+        margin: 5% 4% 5% 0%;
+    }
+
+    // Content Modules //
+    .content__pricing {
+        @include flexContainer(row, center, center);
+    }
+
+    // Footer Modules //
+    .footer__contact__formContainer {
+        flex: 2;
+        margin: 3% 0 0 3%;
+    
+        &__form__label {
+            @include flexContainer(column, center, center);
+            width: 100%;
+    
+            &__p {
+                display: block;
+                background-color: $tertiary-color;
+                padding: 2% 1%;
+                text-align: center;
+            }
+        
+            &__input {
+                width: 90%;
+                height: 1.8rem;
+                border: 2px solid $tertiary-color;
+                border-radius: .1rem;
+                background-color: $primary-color;
+                outline: none;
+    
+                &:focus {
+                    border: .2rem solid $primary-color;
+                }
+    
+            }
+    
+            &__submit {
+                margin-top: 7%;
+                width: 50%;
+                height: 5vh;
+                font-weight: bold;
+                font-family: $primary-font;
+                border: .15rem solid $tertiary-color;
+                outline: none;
+                background-color: $secondary-color;
+                
+            }
+        }
+    }
+
+    .footer__contact__links {
+        flex: .5 2 auto;
+        width: 3vw;
+
+        &__label {
+            margin: 4% auto .9% auto;
+            position: static;
+            text-align: left;
+        }
+    
+        &__element {
+            position: static;
+            left: 5%;
+            text-align: left;
+            margin: 0 auto;
+            padding: 0%;
+        }
+    }
+
+    .footer__credits {
+        margin: 2% 0 1% 0;
+        padding: 1% 0 0.5% 0;
+    }
+}

@@ -18,18 +18,20 @@
             </dl>
         </nav>
 
-        <div class="header__imgContainer">
-          <h1 class="header__imgContainer__title">Premium Boxes</h1>
-          <img class="header__imgContainer__img" id="header-img" src="..\sources\header.png" alt="">  <!--- Maybe display as block later, or make it have its own div tag -->
+        <div class="headerFlex">
+          <div class="header__imgContainer">
+            <h1 class="header__imgContainer__title">Premium Boxes</h1>
+            <img class="header__imgContainer__img" id="header-img" src="..\sources\header.png" alt="">  <!--- Maybe display as block later, or make it have its own div tag -->
+          </div>
+  
+          <section id="our-product" class="header__product">
+              <video class="header__product__video" id="video" width="100%" height="auto" controls>
+                <source src="../sources/video.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+          </section>
         </div>
-
-        <section id="our-product" class="header__product">
-            <video class="header__product__video" id="video" width="100%" height="auto" controls>
-              <source src="../sources/video.mp4" type="video/mp4">
-              <source src="movie.ogg" type="video/ogg">
-              Your browser does not support the video tag.
-            </video>
-        </section>
     </header>
 
     <main class="content">
@@ -107,6 +109,7 @@
           <dt class="footer__contact__links__element"><a href="#" target="_blank">Instagram</a></dt>
         </dl>
       </div>
+
       <p class="footer__credits">2021 @ Designed and coded by <a href="#">Yasmin Ledesma</a>.</p>
     </footer>
   </body>
