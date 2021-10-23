@@ -24,11 +24,10 @@ $link--visited: hsl(0, 0%, 15%);
 // Base //
 body {
     background-color: $primary-color;
-    margin: 0;
     color: $text-color;
 	font-family: $primary-font;
-	box-sizing: border-box;
-    
+    margin: 0;
+    box-sizing: border-box;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -97,7 +96,7 @@ a {
 .header__nav {
     background-color: $tertiary-color;
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
 
     &__menu {

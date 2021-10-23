@@ -1,8 +1,8 @@
 body {
   background-color: #fafafa;
-  margin: 0;
   color: #262626;
   font-family: "Quicksand", sans-serif;
+  margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -93,8 +93,7 @@ a:visited {
 .header__nav {
   background-color: #d4aa7d;
   width: 100%;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
 
