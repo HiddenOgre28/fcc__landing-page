@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fafafa;
   color: #262626;
@@ -155,6 +159,10 @@ a:visited {
   margin: 0 auto;
 }
 
+.header__product {
+  scroll-margin-top: 52px;
+}
+
 .header__product__video {
   width: 100%;
   height: auto;
@@ -195,6 +203,7 @@ a:visited {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  scroll-margin-top: 52px;
 }
 
 .content__pricing__offer {
@@ -280,6 +289,7 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  scroll-margin-top: 52px;
 }
 
 .footer__contact__formContainer__form__label {
