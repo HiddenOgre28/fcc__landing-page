@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="..\styles\styles.css">
+    <script src="../script/script.js" defer></script>
 </head>
 <body>
     <header id="header" class="header">
@@ -35,9 +36,9 @@
     </header>
 
     <main class="content">
-      <blockquote class="content__quote">
+      <div class="content__quote">
           <q class="content__quote__q">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis animi fugiat sequi omnis vel quibusdam error eaque vero at harum.</q>
-      </blockquote>
+      </div>
         
       <section id="pricing" class="content__pricing">
           <div class="content__pricing__offer">
@@ -77,13 +78,13 @@
     <footer class="footer">
       <div class="footer__contact">
         <section id="contact" class="footer__contact__formContainer">
-          <form class="footer__contact__formContainer__form" id="form" action="https://www.freecodecamp.com/email-submit" method="get">
+          <form class="footer__contact__formContainer__form" id="form" action="https://www.freecodecamp.com/email-submit" method="GET">
             <label class="footer__contact__formContainer__form__label" for="email">
               <h3 class="footer__contact__formContainer__form__label__p">Subscribe for weekly box news!</h3>
               <input class="footer__contact__formContainer__form__label__input" type="email" id="email" name="email" placeholder="example@mail.com">
             </label>
             <label class="submit footer__contact__formContainer__form__label" for="submit">
-              <input class="footer__contact__formContainer__form__label__submit" type="submit" id="submit" name="Submit">
+              <button class="footer__contact__formContainer__form__label__submit" type="submit" id="submit" name="Submit">Submit</button>
             </label>
           </form>
         </section>

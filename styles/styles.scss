@@ -154,7 +154,7 @@ a {
     margin-bottom: 10%;
 
     &__q {
-        text-align: justify;
+        text-align: center;
         font-weight: lighter;
         font-size: 1.5rem;
     }
@@ -247,10 +247,9 @@ a {
             background-color: $primary-color;
             outline: none;
 
-            &:focus {
-                border: .2rem solid $primary-color;
+            &:unfocus {
+                border: 2px solid $tertiary-color;
             }
-
         }
 
         &__submit {
@@ -263,6 +262,9 @@ a {
             outline: none;
             background-color: $secondary-color;
             
+            &:hover {
+                cursor: pointer;
+            }
         }
     }
 }
@@ -298,6 +300,14 @@ a {
     margin: 1.5%;
     padding: 2%;
     border-top: solid $tertiary-color;
+}
+
+.input__invalid{
+    border: 3px solid red;
+}
+
+.input__valid {
+    border: 3px solid green;
 }
 
 // Mobile M - 375px//
@@ -347,6 +357,17 @@ a {
     }
 
     // Content Modules //
+    .content__quote {
+        width: 100%;
+        margin-bottom: 10%;
+    
+        &__q {
+            text-align: center;
+            font-weight: lighter;
+            font-size: 1.5rem;
+        }
+    }
+
     .content__pricing {
         @include flexContainer(row, center, center);
     }
