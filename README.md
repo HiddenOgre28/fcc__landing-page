@@ -13,4 +13,4 @@ You can also find it in the [CodePen.io](https://codepen.io/HiddenOgre28/pen/QWg
 
 Author:
 ----------
-* **Yasmin Ledesma**  -  [HiddenOgre28](https://github.com/HiddenOgre28)
+* **Yasmin Ledesma**  -  [yasledesma](https://github.com/yasledesma)
